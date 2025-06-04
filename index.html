@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forestal Amanda's personal Portfolio">
+    <meta name="keywords" content="Forestal Amanda, mxr.codes, mandaintech, Forestal Amanda's Portfolio, Python Developer">
+    <meta name="author" content="Forestal Amanda">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Forestal Amanda's Portfolio">
+    <meta property="og:description" content="Explore my portfolio showcasing a DrapoQuiz with Js, full-stack web applications E-kou.Manda and more. Stay tuned for updates on my Instagram and on Youtube soon.">
+    <meta property="og:url" content="https://mxr.codes">
+    <meta property="og:image" content="https://mxr.codes/images/mypfp.png">
+    <meta property="og:site_name" content="mxr.codes">
+    <meta property="og:see_also" content="https://www.instagram.com/mandaintech">
+
+       
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" type="text/css" href="static/mediaqueries.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<!-- The Body 🥴--> 
+<body>
+    <nav id="desktop-nav">
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">mxr.codes</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!--Section profile-->
+    <section id="profile">
+        <div class="section__pic-container" data-aos="fade-right">
+            <img class="me" src="static/Images/me.png" alt="profile-picture"/>
+        </div>
+        <div class="section__text" data-aos="fade-left">
+            <p class="section__text__p1">Hello👋, I'm</p>
+            <h1 class="title">Forestal Amanda</h1>
+            <p class="section__text__p2">
+                <span class="static-text">I'm a</span> 
+                <span class="dynamic-text" data-period="2000" 
+                      data-type='["Computer Science", "Web Developer", "Python Developer"]'>
+                </span>
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='#about'">
+                    About
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id="socials-container">
+
+                <a href="https://instagram.com/" target="_blank" class="social-link" data-aos="fade-up" data-aos-delay="200">
+                    <img src="static/Images/icones/instagram.png" alt="My Instagram profile" class="icon"/>
+                </a>
+                <a href="https://github.com/" target="_blank" class="social-link" data-aos="fade-up" data-aos-delay="300">
+                    <img src="static/Images/icones/github.png" alt="My GitHub profile" class="icon"/>
+                </a>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Section about-->
+    <section id="about">
+        <h1 class="title" data-aos="fade-up">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container" data-aos="fade-right">
+                <img src="static/Images/about_me.png" class="about-pic"/>
+            </div>
+            <div class="about-details-container" data-aos="fade-left">
+                <div class="about-containers">
+                    <div class="details-container" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="static/Images/icones/education.png" alt="" class="icon"/>
+                        <h3>Content creator</h3>
+                        <p>Soon</p>
+                    </div>
+                </div>
+                <div class="text-container" data-aos="fade-up">
+                    <p>   
+                        I’m a passionate developer with a strong focus on Python and web development. I building web applications using technologies like Flask, HTML/CSS, JavaScript, and SQL/PostgreSQL etc... I also design modern and user-friendly websites. 
+                        Curious, creative, and solution-oriented, I develop useful tools across various domains. I've completed Harvard’s <a href="#" target="_blank">CS50x</a> course, which  gave me a solid foundation in computer science fundamentals. 
+                        Currently, I’m learning artificial intelligence to integrate smart, innovative features into my projects. My goal is to create simple, effective, and accessible solutions that deliver real impact.
+                    </p> 
+                </div>
+            </div>
+        </div>
+        <!--<img src="/images/icons/arrow.png" class="icon arrow" onclick="location.href='#projects'" data-aos="fade-up">-->
+    </section>
+
+    <!--Section projects-->
+    <section id="projects">
+        <h1 class="title" data-aos="fade-up">Main Projects</h1>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="static/Images/orosh2.png" alt="orosh Website" class="project-img">
+                    <div class="project-overlay">
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Orosh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Orosh Landing Page</h3>
+                    <p class="project-description">Landing Page for Orosh to show their activities</p>
+                    <div class="btn-container">
+                        <button class="btn project-btn btn-color-2" onclick="window.open('https://orosh.org/index.html', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="static/Images/miniquiz.png" alt="Mini Quiz" class="project-img">
+                    <div class="project-overlay">
+                        <div class="tech-stack">
+                            <span class="tech-tag">Html</span>
+                            <span class="tech-tag">Css</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">github</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">DrapoQuiz</h3>
+                    <p class="project-description">This project is an interactive mini-quiz about Haitian Flag Day, created using HTML, CSS, and JavaScript. It allows you to test your knowledge of the history and symbols of the Haitian flag.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://amanda-forest.github.io/quiz-drapeau-haiti/', '_blank')">
+                            Live Demo
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://github.com/Amanda-Forest/quiz-drapeau-haiti', '_blank')">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-image">
+                    <img src="static/Images/certif.png" alt="Learning Plateform" class="project-img">
+                    <div class="project-overlay">
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">JavaScript </span>
+                            <span class="tech-tag">CS50x</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title"><a title="What is E-kou.Manda?" href="https://www.youtube.com/watch?v=GPJ8ChM42g4" target="_blank">E-kou.Manda</a> Learning Platform </h3>
+                    <p class="project-description">An MVP of a learning platform.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://www.youtube.com/watch?v=GPJ8ChM42g4'">
+                            Live Demo
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://certificates.cs50.io/7b938210-0c79-4188-b81b-3b50358f2219.pdf?size=letter'">
+                            CS50 Certificate
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="technologies-section" data-aos="fade-up">
+            <h2 class="technologies-title">Tools I use ⚒️</h2>
+            <div class="technologies-container">
+                <div class="technology-item" data-aos="zoom-in" data-aos-delay="50">
+                    <img src="static/Images/techonolies/python.png" alt="Python" class="technology-icon">
+                    <span class="technology-name">Python</span>
+                </div>
+                <div class="technology-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="static/Images/techonolies/html.png" alt="HTML" class="technology-icon">
+                    <span class="technology-name">HTML</span>
+                </div>
+                <div class="technology-item" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="static/Images/techonolies/css.png" alt="CSS" class="technology-icon">
+                    <span class="technology-name">CSS</span>
+                </div>
+                <div class="technology-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="static/Images/techonolies/javascript.png" alt="JavaScript" class="technology-icon">
+                    <span class="technology-name">JavaScript</span>
+                </div>
+                <div class="technology-item" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="static/Images/techonolies/github.png" alt="GitHub" class="technology-icon">
+                    <span class="technology-name">GitHub</span>
+                </div>
+                <div class="technology-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="static/Images/techonolies/git.png" alt="Git" class="technology-icon">
+                    <span class="technology-name">Git</span>
+                </div>
+                <div class="technology-item" data-aos="zoom-in" data-aos-delay="450">
+                    <img src="static/Images/techonolies/cli.png" alt="Command Line" class="technology-icon">
+                    <span class="technology-name">CLI</span>
+                </div>
+                 <div class="technology-item" data-aos="zoom-in" data-aos-delay="450">
+                    <img src="static/Images/techonolies/sql.png" alt="Command Line" class="technology-icon">
+                    <span class="technology-name">SQL</span>
+                </div>
+                 <div class="technology-item" data-aos="zoom-in" data-aos-delay="450">
+                    <img src="static/Images/techonolies/flask.png" alt="Command Line" class="technology-icon">
+                    <span class="technology-name">Flask</span>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    
+    <!--Section contact-->
+    <section id="contact">
+        <h1 class="title" data-aos="fade-up">Contact Me</h1>
+        <div class="contact-info-upper-container" data-aos="zoom-in">
+            <div class="contact-info-container">
+                <img src="static/Images/icones/email.png" alt="email" class="icon contact-icon email-icon">
+                <p><a href="mailto:forestal253@gmail.com">Contact Me</a></p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#profile">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p>Copyright &#169; 2025. All Rights Reserved.</p>
+                <p> ❤️Built by Amanda🦋</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* Media Queries for Responsive Design */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #desktop-nav {
+        display: none; /* Hide desktop navigation on mobile */
+    }
+    
+    #hamburger-nav {
+        display: block; /* Show hamburger navigation on mobile */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    .section__pic-container {
+        width: 100%; /* Full width for profile picture */
+    }
+
+    .about-pic {
+        width: 100%; /* Full width for about section picture */
+    }
+
+    .project-img {
+        width: 100%; /* Full width for project images */
+    }
+
+    .btn-container {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #desktop-nav {
+        display: block; /* Show desktop navigation on tablet */
+    }
+    
+    #hamburger-nav {
+        display: none; /* Hide hamburger navigation on tablet */
+    }
+
+    .section__pic-container {
+        width: 50%; /* Half width for profile picture */
+    }
+
+    .about-pic {
+        width: 50%; /* Half width for about section picture */
+    }
+
+    .project-img {
+        width: 50%; /* Half width for project images */
+    }
+} 
+
+/* Larger Screens */
+@media (min-width: 1025px) {
+    .section__pic-container {
+        width: 30%; /* Adjust width for larger screens */
+    }
+
+    .about-pic {
+        width: 30%; /* Adjust width for larger screens */
+    }
+
+    .project-img {
+        width: 30%; /* Adjust width for larger screens */
+    }
+}
